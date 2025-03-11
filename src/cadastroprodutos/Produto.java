@@ -5,7 +5,7 @@ public class Produto {
     private String codigo;
     private String nome;
     private double preco;
-
+    // Construtor da classe
     public Produto(String codigo, String nome, double preco) {
         super();
         this.codigo = codigo;
