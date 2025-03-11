@@ -4,7 +4,7 @@ public class Eletronico extends Produto {
     // Declaração de variáveis
     private String marca;
     private int garantia_meses;
-
+    // Construtor da classe
     public Eletronico(String codigo, String nome, double preco, String marca, int garantia_meses) {
         super(codigo, nome, preco);
         this.marca = marca;
