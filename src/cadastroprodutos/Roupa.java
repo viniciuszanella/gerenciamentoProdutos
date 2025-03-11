@@ -4,7 +4,7 @@ package cadastroprodutos;
         // Declaração de variáveis
         private String tamanho;
         private String material;
-
+        // Construtor da classe
         public Roupa(String codigo, String nome, double preco, String tamanho, String material) {
             super(codigo, nome, preco);
             this.tamanho = tamanho;
