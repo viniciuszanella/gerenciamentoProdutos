@@ -8,7 +8,7 @@ public class Alimento extends Produto{
     private LocalDate data_validade;
     private String categoria;
 
-    // Construtor da classe Alimento
+    // Construtor da classe
     public Alimento(String codigo, String nome, double preco, LocalDate data_validade, String categoria) {
         super(codigo, nome, preco);
         this.data_validade = data_validade;
