@@ -14,33 +14,31 @@ public class Principal {
         int opcao;
         do {
             // Menu do programa Sistema de Gerenciamento de Produtos
-            System.out.println("\n--- Sistema de Gerenciamento de Produtos ---");
-            System.out.println("1. Cadastrar Produto");
-            System.out.println("2. Exibir Produtos");
-            System.out.println("3. Excluir Produto");
-            System.out.println("4. Editar Produto");
-            System.out.print("Escolha uma opção: ");
+            System.out.println("********* GERENCIAMENTO DE PRODUTOS ************");
+            System.out.println("* 1 - Cadastrar 2 - Editar  *");
+            System.out.println("* 3 - Excluir 4 - Listar   *");
+            System.out.println("*          9 - Fim         *");
+            System.out.println("****************************");
+            System.out.println("Opção: ");
             opcao = sc.nextInt();
             sc.nextLine();
-            // Estrutura switch para executar diferentes operações com base na opção escolhida
+            // Estrutura switch para executar diferentes operações com base na opção escolhida pelo usuário
             switch (opcao) {
                 case 1:
                     cadastrarProduto();
                     break;
                 case 2:
-                    exibirProdutos();
+                    editarProduto();
                     break;
                 case 3:
                     excluirProduto();
                     break;
                 case 4:
-                    editarProduto();
+                    listarProdutos();
                     break;
-                default:
-                    System.out.println("Opção inválida!");
             }
             // Loop para não finalizar programa
-        } while (opcao != 5);
+        } while (opcao != 9);
     }
     // Método para cadastrar o Produto
     private static void cadastrarProduto() {
@@ -80,7 +78,7 @@ public class Principal {
                 produtos.add(new Roupa(codigo, nome, preco, tamanho, material));
                 break;
             case 3: // Cadastrar um alimento
-                System.out.print("Data de validade (YYYY-MM-DD): ");
+                System.out.print("Data de validade (ANO-MÊS-DIA): ");
                 LocalDate dataValidade = LocalDate.parse(sc.nextLine());
                 System.out.print("Categoria: ");
                 String categoria = sc.nextLine();
@@ -93,7 +91,7 @@ public class Principal {
         System.out.println("Produto cadastrado com sucesso!");
     }
     // Método para exibir produtos listados no arraylist
-    private static void exibirProdutos() {
+    private static void listarProdutos() {
         // Verifica se o arraylist está vazio
         if (produtos.isEmpty()) {
             System.out.println("\nNenhum produto cadastrado!");
