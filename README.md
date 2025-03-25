@@ -1,4 +1,4 @@
-## Descrição 📱💻👚🍽️
+## Descrição do Projeto ℹ️
 
 Este projeto é uma aplicação Java que implementa um **Sistema de Gerenciamento de Produtos**. O sistema permite o cadastro, alteração, exclusão e listagem de produtos de três categorias diferentes: **Alimentos**, **Roupas** e **Eletrônicos**. Utilizando um **ArrayList**, o sistema organiza os produtos de forma eficiente e permite que o usuário gerencie o estoque de maneira simples e rápida. 🛒⚡
 
